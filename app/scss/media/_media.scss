@@ -1,0 +1,15 @@
+@include media-breakpoint-down (xl) {
+   h1 {
+      font-size: 45px !important;
+   }
+}
+
+@include media-breakpoint-down (sm) {
+   h1 {
+      font-size: 35px !important;
+   }
+
+   img {
+      max-width: 100%;
+   }
+}

@@ -1,0 +1,48 @@
+.btn {
+   color: $text-white;
+   font-weight: 500;
+   border-radius: 0px 20px;
+   height: 55px;
+   width: 230px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: background-color .2s ease-in, color .2s ease-in;
+
+   &--orange {
+      background-color: $orange;
+
+      &:hover {
+         background-color: white;
+         color: $green;
+      }
+   }
+
+   &--green {
+      background-color: $green;
+
+      &:hover {
+         background-color: $orange;
+         color: $text-white;
+      }
+   }
+
+   &--center {
+      margin: 0 auto;
+
+      &-lg {
+         @include media-breakpoint-down (lg) {
+            margin: 0 auto;
+         }
+      }
+   }
+}
+
+
+@media (max-width: 768px) {
+   .btn {
+      &--center-md {
+         margin: 0 auto;
+      }
+   }
+}

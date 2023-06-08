@@ -1,0 +1,32 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/variables";
+
+@import "abstract/mixins";
+@import "abstract/variables";
+
+@import "base/typography";
+@import "base/body";
+@import "base/utils";
+
+@import "components/button";
+@import "components/statistic";
+@import "components/team";
+@import "components/course";
+@import "components/breadcrumbs";
+@import "components/burger";
+@import "components/question";
+
+@import "form/input";
+
+@import "layout/footer";
+@import "layout/header";
+@import "layout/main";
+@import "layout/menu";
+@import "layout/section";
+
+@import "pages/single";
+
+@import "section/welcome";
+
+@import "media/media";

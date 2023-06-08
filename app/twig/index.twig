@@ -1,0 +1,254 @@
+{% extends 'templates/base.twig' %}
+
+{% block content %}
+
+{# Образовательная онлайн-платформа #}
+<section class="welcome">
+   <div class="container">
+      <div class="welcome__wrapper">
+
+         <div class="welcome__flex">
+            <div class="welcome__socials">
+               <a href="https://www.facebook.com/">
+                  <img src="images/socials/fb.svg" alt="">
+               </a>
+               <a href="https://www.vk.com/">
+                  <img src="images/socials/vk.svg" alt="">
+               </a>
+               <a href="https://www.instagram.com/">
+                  <img src="images/socials/instagram.svg" alt="">
+               </a>
+            </div>
+            <div class="welcome__photo welcome__photo--left">
+               <img src="images/welcome/photo-2.jpg" alt="">
+            </div>
+         </div>
+
+         <div class="welcome__info">
+            <div>
+               <img src="images/logo.svg" alt="">
+            </div>
+            <h1 class="section__title section__title--pt40">
+               Образовательная
+               онлайн-платформа
+            </h1>
+            <div class="section__text section__text--center section__text--width380">
+               Курсы и видео-лекции по дизайну, копирайтингу,
+               SMM, таргету и многим другим направлениям
+            </div>
+            <a href="#" class="btn btn--orange">
+               Все направления
+            </a>
+         </div>
+
+         <div class="welcome__flex">
+            <div class="welcome__photo welcome__photo--right">
+               <img src="images/welcome/photo-1.jpg" alt="">
+            </div>
+            <a href="#start" class="welcome__scroll">
+               <svg width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5 17L1 12.871M5 17L9 12.871M5 17V1" stroke-width="2" stroke-linecap="round"
+                     stroke-linejoin="round" />
+               </svg>
+               <span> Листайте вниз</span>
+            </a>
+         </div>
+      </div>
+   </div>
+</section>
+
+{# Цифры #}
+<section class="section statistic" id="start">
+   <div class="container">
+      <div class="row">
+         <div class="col-md-3 col-sm-6">
+            {% include "components/statistic.twig" with {
+            title : '100+',
+            text : 'теоретических и практических
+            курсов для разного уровня'
+            } %}</div>
+         <div class="col-md-3 col-sm-6">
+            {% include "components/statistic.twig" with {
+            title : '3 000',
+            text : 'часов видео-лекций и вебинаров
+            от лучших преподавателей'
+            } %}
+         </div>
+         <div class="col-md-3 col-sm-6">
+            {% include "components/statistic.twig" with {
+            title : '15',
+            text : 'направлений обучения востребованным профессиям'
+            } %}
+         </div>
+         <div class="col-md-3 col-sm-6">
+            {% include "components/statistic.twig" with {
+            title : '2 000',
+            text : 'учеников уже занимаются на нашей платформе'
+            } %}
+         </div>
+      </div>
+   </div>
+</section>
+
+{# Учитесь у лучших #}
+<section class="section section--pt0">
+   <div class="container">
+      <div class="row gy-30">
+         <div class="col-lg-6 col-12 section__position section__position--center">
+            <h2 class="section__title">Учитесь у лучших</h2>
+            <div class="section__text">
+               <p>
+                  Наши преподаватели – профессионалы, которые добились успеха в своей области. Лид-дизайнеры
+                  известных
+                  студий, маркетологи крупнейших компаний, редакторы популярных медиа: получайте опыт из первых рук,
+                  в
+                  любое время.
+               </p>
+               <p>
+                  Кураторы курсов – наши лучшие выпускники, будут помогать и поддерживать вас на протяжении всего
+                  обучения.
+               </p>
+            </div>
+            <div>
+               <a href="#" class="btn btn--green">
+                  Все преподаватели
+               </a>
+            </div>
+         </div>
+         <div class="col-lg-6">
+            <div class="row gy-30">
+               <div class="col-sm-4 col-6">
+                  {% include "components/person.twig" with {
+                  img : 'person-1.jpg',
+                  text : 'Катя, ведущий дизайнер TailGroup'
+                  } %}
+               </div>
+               <div class="col-sm-4 col-6">
+                  {% include "components/person.twig" with {
+                  img : 'person-2.jpg',
+                  text : 'Марина, маркетолог Headers Market'
+                  } %}
+               </div>
+               <div class="col-sm-4 col-6">
+                  {% include "components/person.twig" with {
+                  img : 'person-3.jpg',
+                  text : 'Сава, PR-менеджер Central Media'
+                  } %}
+               </div>
+               <div class="col-sm-4 col-6">
+                  {% include "components/person.twig" with {
+                  img : 'person-4.jpg',
+                  text : 'Паша, основатель LeadCompany'
+                  } %}
+               </div>
+               <div class="col-sm-4 col-6">
+                  {% include "components/person.twig" with {
+                  img : 'person-5.jpg',
+                  text : 'Саша, главный редактор Just Journal'
+                  } %}
+               </div>
+               <div class="col-sm-4 col-6">
+                  {% include "components/person.twig" with {
+                  img : 'person-6.jpg',
+                  text : 'Лёня, ведущий разработчик Ymail'
+                  } %}
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+
+{# Зеленый #}
+<section class="section section--green">
+   <div class="container">
+      <div class="row row--center--align gy-30">
+         <div class="col-lg-6 d--sm--none">
+            <div class="section__img section__img--left">
+               <img src="images/section/green/photo-1.jpg" alt="">
+            </div>
+         </div>
+         <div class="col-lg-6 pl-30">
+            <div class="section__content section__content--center-lg">
+               <h2 class="section__title">
+                  Выбирайте свой формат обучения
+               </h2>
+               <div class="section__text">
+                  Смотрите видео-лекции в удобное для вас время, обучайтесь на тренажере, участвуйте в интенсивных
+                  воркшопах
+                  с командой или проходите курс с гибким расписанием.
+                  На нашей платформе каждый найдет подходящий формат.
+               </div>
+               <a href="#" class="btn btn--orange btn--center-lg">
+                  Все курсы
+               </a>
+            </div>
+
+         </div>
+      </div>
+   </div>
+</section>
+
+{# Курсы #}
+<section class="section">
+   <div class="container">
+      <h2 class="section__title section__title--center">
+         Популярные курсы
+      </h2>
+      <div class="section__wrapper">
+         <div class="row">
+            <div class="col-md-3 col-sm-6 col-12">
+               {% include "components/course.twig" with {
+               img: 'photo-1.jpg',
+               text: 'Motion design',
+               } %}
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+               {% include "components/course.twig" with {
+               img: 'photo-2.jpg',
+               text: 'Таргет в Instagram',
+               } %}
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+               {% include "components/course.twig" with {
+               img: 'photo-3.jpg',
+               text: 'Эффектные презентации',
+               } %}
+            </div>
+            <div class="col-md-3 col-sm-6 col-12">
+               {% include "components/course.twig" with {
+               img: 'photo-4.jpg',
+               text: 'SMM-стратегия',
+               } %}
+            </div>
+         </div>
+      </div>
+      <a href="#" class="btn btn--green btn--center">
+         Все курсы
+      </a>
+   </div>
+</section>
+
+{# Тариф #}
+<section class="section__bg--1">
+   <div class="container">
+      <div class="section__position section__position--right section__content--center-lg">
+         <div class="section section__width">
+            <h2 class="section__title">
+               Присоединяйтесь
+               к E-Mentor сейчас
+            </h2>
+            <div class="section__text">
+               Выберите подходящий тариф и формат обучения, пройдите 2 урока и мы подарим вам дополнительные лекции по
+               любому
+               направлению бесплатно!
+            </div>
+            <a href="#" class="btn btn--orange btn--center-lg">
+               Выбрать тариф
+            </a>
+         </div>
+      </div>
+   </div>
+</section>
+
+{% endblock %}

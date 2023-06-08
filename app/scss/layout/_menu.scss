@@ -1,0 +1,70 @@
+.site-menu {
+   @include media-breakpoint-up (md) {
+      padding-left: 25px;
+      max-width: 650px;
+      width: 100%;
+   }
+
+   @include media-breakpoint-down (md) {
+      background-color: white;
+      position: absolute;
+      box-shadow: 0px 6px 9px 2px rgba(0, 0, 0, 0.25);
+      left: 30%;
+      right: 20px;
+      top: 100%;
+      margin-top: 20px;
+      display: none;
+      z-index: 90;
+      border-radius: 10px;
+   }
+
+   a {
+      color: $text-white;
+      display: block;
+
+      @include media-breakpoint-up (md) {
+         padding-bottom: 3px;
+         transition: border-color .3s ease-in;
+         border-bottom: 2px dashed transparent;
+
+         &:hover {
+            border-color: $orange;
+         }
+      }
+
+      @include media-breakpoint-down (md) {
+         color: $orange;
+      }
+   }
+
+   li {
+      @include media-breakpoint-down (md) {
+         &:not(:last-child) {
+            margin-bottom: 13px;
+         }
+      }
+   }
+
+   ul {
+      font-weight: 500;
+
+      @include media-breakpoint-up(md) {
+         justify-content: space-between;
+         display: flex;
+      }
+
+      @include media-breakpoint-down(md) {
+         padding: 15px;
+      }
+   }
+
+   &--center {
+      margin: 0 auto;
+   }
+
+   &--black {
+      a {
+         color: $text-black;
+      }
+   }
+}

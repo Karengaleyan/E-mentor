@@ -1,0 +1,32 @@
+.header {
+   padding: 40px 0 0 0;
+
+   @include media-breakpoint-down (md) {
+      padding: 20px 0 0 0;
+   }
+
+   @include media-breakpoint-down (sm) {
+      z-index: 10;
+   }
+
+   &__burger {
+      &--end {
+         margin-left: auto;
+      }
+   }
+
+   &--fixed {
+      position: absolute;
+      left: 0;
+      right: 0;
+   }
+
+   &__row {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__logo {
+      width: 130px !important;
+   }
+}

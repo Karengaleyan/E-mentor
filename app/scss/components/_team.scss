@@ -1,0 +1,12 @@
+.person {
+   &__photo {
+      margin-bottom: 15px;
+      text-align: center;
+   }
+
+   &__info {
+      font-size: $fs-small;
+      text-align: center;
+      line-height: 1.3;
+   }
+}
